@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>example-spring-boot</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>example-spring-boot-starter</artifactId>
+    <packaging>jar</packaging>
+
+    <name>example-spring-boot-starter </name>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- 构建META-INF/spring-configuration-metadata.json 元数据 -->
+        <!-- 依据注解的@ConfigurationProperties类-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- 构建META-INF/spring-autoconfigure-metadata.properties 元数据 -->
+        <!---->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+    </dependencies>
+
+    <!--<build>
+        <finalName>example-spring-boot-starter</finalName>
+    </build>-->
+</project>

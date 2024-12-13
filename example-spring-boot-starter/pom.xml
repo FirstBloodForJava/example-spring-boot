@@ -30,7 +30,7 @@
         </dependency>
 
         <!-- 构建META-INF/spring-autoconfigure-metadata.properties 元数据 -->
-        <!---->
+        <!-- 依据META-INF/spring.factories中自动配置的信息生成 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure-processor</artifactId>

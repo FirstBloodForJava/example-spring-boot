@@ -6,6 +6,7 @@
         <groupId>com.example</groupId>
         <artifactId>example-spring-boot</artifactId>
         <version>1.0</version>
+        <relativePath>../custom-spring-boot-dependencies/pom.xml</relativePath>
     </parent>
 
     <artifactId>example-spring-boot-starter</artifactId>

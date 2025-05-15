@@ -4,15 +4,16 @@
 
     <parent>
         <groupId>com.example</groupId>
-        <artifactId>example-spring-boot</artifactId>
+        <artifactId>custom-spring-boot-dependencies</artifactId>
         <version>1.0</version>
+        <!--因为parent是不是example-spring-boot，所以需要调整relativePath-->
         <relativePath>../custom-spring-boot-dependencies/pom.xml</relativePath>
     </parent>
 
     <artifactId>example-spring-boot-starter</artifactId>
     <packaging>jar</packaging>
 
-    <name>example-spring-boot-starter </name>
+    <name>example-spring-boot-starter</name>
 
     <dependencies>
 

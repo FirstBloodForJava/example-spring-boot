@@ -14,8 +14,10 @@
 
 
     <modules>
-        <module>example-spring-boot-starter</module>
         <module>custom-spring-boot-dependencies</module>
+        <module>example-spring-boot-starter</module>
+        <module>custom-datasource-spring-boot-starter</module>
+        <module>custom-util</module>
     </modules>
 
 
@@ -32,6 +34,8 @@
 
         <!--全局版本控制-->
         <spring-boot.version>2.2.7.RELEASE</spring-boot.version>
+        <druid.version>1.2.24</druid.version>
+        <fastjson.version>2.0.21</fastjson.version>
 
     </properties>
 
@@ -45,6 +49,18 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
             </dependency>
 
         </dependencies>
